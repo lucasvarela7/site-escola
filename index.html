@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa da Desigualdade 2025 | Ibirapuera vs Brasilândia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="logo">GEO<span>SP</span> | Mapa da Desigualdade 2025</div>
+        <div class="timer-container">
+            <span class="timer-label">Tempo de Apresentação:</span>
+            <span id="timer-display">05:00</span>
+            <button id="start-timer-btn">▶ Iniciar</button>
+            <button id="reset-timer-btn">↺ Reset</button>
+        </div>
+    </header>
+
+    <main class="slide-container">
+
+        <!-- SLIDE 1: CAPA -->
+        <section class="slide active" id="slide-1">
+            <div class="badge">Geografia — Ensino Médio</div>
+            <h1 class="main-title">Análise do Mapa da Desigualdade</h1>
+            <h2 class="sub-title">Estudo Comparativo Socioespacial entre Ibirapuera e Brasilândia</h2>
+            <div class="hero-cards">
+                <div class="district-card fav-border">
+                    <span class="tag fav">Situação Mais Favorável</span>
+                    <h3>Ibirapuera / Moema</h3>
+                    <p>Vetor Central/Nobre (Zona Sul)</p>
+                </div>
+                <div class="district-card unfav-border">
+                    <span class="tag unfav">Situação Menos Favorável</span>
+                    <h3>Brasilândia</h3>
+                    <p>Extremo Periférico (Zona Norte)</p>
+                </div>
+            </div>
+            <div class="presentation-info">
+                <span>⏱ <b>Duração:</b> 5 Minutos</span> | <span>👥 <b>Apresentação em Dupla</b></span>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: SAÚDE -->
+        <section class="slide" id="slide-2">
+            <div class="slide-header">
+                <span class="axis-badge">Eixo 1</span>
+                <h2>INDICADORES DE SAÚDE PÚBLICA</h2>
+            </div>
+            <div class="grid-2">
+                <div class="indicator-box">
+                    <h3>1. Mortalidade Infantil</h3>
+                    <p class="measure-def"><b>O que mede:</b> Óbitos de crianças com menos de 1 ano por mil nascidos vivos.</p>
+                    <p class="unit"><b>Unidade:</b> Óbitos / 1.000 nascidos vivos (‰)</p>
+                    <div class="data-comparison">
+                        <div class="data-card fav-bg">
+                            <h4>Ibirapuera</h4>
+                            <span class="val">0,0</span>
+                            <small>Excelente cobertura de pré-natal e saneamento</small>
+                        </div>
+                        <div class="data-card unfav-bg">
+                            <h4>Brasilândia</h4>
+                            <span class="val">15,2</span>
+                            <small>Dificuldade de acesso à saúde primária</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indicator-box">
+                    <h3>2. Tempo de Espera por Consulta</h3>
+                    <p class="measure-def"><b>O que mede:</b> Média de dias de espera para agendamento na Atenção Básica (UBS).</p>
+                    <p class="unit"><b>Unidade:</b> Dias corridos</p>
+                    <div class="data-comparison">
+                        <div class="data-card fav-bg">
+                            <h4>Ibirapuera</h4>
+                            <span class="val">&lt; 7 dias</span>
+                            <small>Ampla oferta e complemento privado</small>
+                        </div>
+                        <div class="data-card unfav-bg">
+                            <h4>Brasilândia</h4>
+                            <span class="val">&gt; 60 dias</span>
+                            <small>Sobrecarga nas Unidades Básicas de Saúde</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: EDUCAÇÃO -->
+        <section class="slide" id="slide-3">
+            <div class="slide-header">
+                <span class="axis-badge">Eixo 2</span>
+                <h2>INDICADORES DE EDUCAÇÃO PÚBLICA</h2>
+            </div>
+            <div class="grid-2">
+                <div class="indicator-box">
+                    <h3>1. Qualidade do Ensino (IDEB)</h3>
+                    <p class="measure-def"><b>O que mede:</b> Desempenho e aprovação escolar nos Anos Finais do Ensino Fundamental II.</p>
+                    <p class="unit"><b>Unidade:</b> Índice de 0 a 10 pontos</p>
+                    <div class="data-comparison">
+                        <div class="data-card fav-bg">
+                            <h4>Ibirapuera</h4>
+                            <span class="val">6,8</span>
+                            <small>Maior estabilidade de professores e estrutura</small>
+                        </div>
+                        <div class="data-card unfav-bg">
+                            <h4>Brasilândia</h4>
+                            <span class="val">4,4</span>
+                            <small>Déficit estrutural nas redes de ensino</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indicator-box">
+                    <h3>2. Taxa de Abandono Escolar</h3>
+                    <p class="measure-def"><b>O que mede:</b> Porcentagem de alunos que evadiram da escola antes da conclusão do ciclo.</p>
+                    <p class="unit"><b>Unidade:</b> Porcentagem (%)</p>
+                    <div class="data-comparison">
+                        <div class="data-card fav-bg">
+                            <h4>Ibirapuera</h4>
+                            <span class="val">0,1%</span>
+                            <small>Evasão praticamente nula</small>
+                        </div>
+                        <div class="data-card unfav-bg">
+                            <h4>Brasilândia</h4>
+                            <span class="val">3,8%</span>
+                            <small>Pressão socioeconômica e trabalho precoce</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: SEGURANÇA PÚBLICA -->
+        <section class="slide" id="slide-4">
+            <div class="slide-header">
+                <span class="axis-badge">Eixo 3</span>
+                <h2>INDICADORES DE SEGURANÇA PÚBLICA</h2>
+            </div>
+            <div class="grid-2">
+                <div class="indicator-box">
+                    <h3>1. Homicídios de Jovens</h3>
+                    <p class="measure-def"><b>O que mede:</b> Mortes violentas intencionais de jovens por grupo populacional.</p>
+                    <p class="unit"><b>Unidade:</b> Casos por 100 mil habitantes</p>
+                    <div class="data-comparison">
+                        <div class="data-card fav-bg">
+                            <h4>Ibirapuera</h4>
+                            <span class="val">1,2</span>
+                            <small>Presença Ostensiva de Segurança Privada/Pública</small>
+                        </div>
+                        <div class="data-card unfav-bg">
+                            <h4>Brasilândia</h4>
+                            <span class="val">18,6</span>
+                            <small>Exposição contínua de jovens à vulnerabilidade</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indicator-box">
+                    <h3>2. Notificação de Feminicídios</h3>
+                    <p class="measure-def"><b>O que mede:</b> Registros de violência letal ou grave praticada contra a mulher por gênero.</p>
+                    <p class="unit"><b>Unidade:</b> Casos por 10 mil mulheres</p>
+                    <div class="data-comparison">
+                        <div class="data-card fav-bg">
+                            <h4>Ibirapuera</h4>
+                            <span class="val">0,2</span>
+                            <small>Menores taxas notificadas</small>
+                        </div>
+                        <div class="data-card unfav-bg">
+                            <h4>Brasilândia</h4>
+                            <span class="val">2,8</span>
+                            <small>Menor acesso a redes formais de proteção</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: HABIATÇÃO -->
+        <section class="slide" id="slide-5">
+            <div class="slide-header">
+                <span class="axis-badge">Eixo 4</span>
+                <h2>INDICADOR DE HABITAÇÃO E MORADIA</h2>
+            </div>
+            <div class="single-indicator-container">
+                <div class="indicator-box full">
+                    <h3>Proporção de Domicílios Localizados em Favelas</h3>
+                    <p class="measure-def"><b>O que mede:</b> Percentual de residências construídas em aglomerados urbanos irregulares, sem infraestrutura plena.</p>
+                    <p class="unit"><b>Unidade de medida:</b> Porcentagem de domicílios (%)</p>
+                    
+                    <div class="visual-progress-wrapper">
+                        <div class="progress-group">
+                            <div class="prog-header">
+                                <span><b>Ibirapuera / Moema</b> (0,0%)</span>
+                                <span>0% em favelas</span>
+                            </div>
+                            <div class="bar-bg">
+                                <div class="bar-fill fav-fill" style="width: 2%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-group">
+                            <div class="prog-header">
+                                <span><b>Brasilândia</b> (28,4%)</span>
+                                <span>~1 em cada 3 moradias</span>
+                            </div>
+                            <div class="bar-bg">
+                                <div class="bar-fill unfav-fill" style="width: 28.4%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: HIPÓTESE GEOGRÁFICA -->
+        <section class="slide" id="slide-6">
+            <div class="slide-header">
+                <span class="axis-badge hypothesis">Interpretação Geográfica (3,0 Pontos)</span>
+                <h2>HIPÓTESE: POR QUE EXISTE ESSA DESIGUALDADE?</h2>
+            </div>
+            <div class="hypothesis-grid">
+                <div class="hypo-card">
+                    <div class="hypo-num">01</div>
+                    <h3>Segregação Socioespacial</h3>
+                    <p>O mercado imobiliário e a especulação fundiária encareceram o solo do centro expandido (Ibirapuera), empurrando a população de menor renda para periferias desprovidas de infraestrutura (Brasilândia).</p>
+                </div>
+                <div class="hypo-card">
+                    <div class="hypo-num">02</div>
+                    <h3>Investimento Público Desigual</h3>
+                    <p>Historicamente, os investimentos do Estado em mobilidade, saúde de ponta e urbanismo concentram-se no centro já consolidado, enquanto as bordas da cidade enfrentam graves déficits orçamentários.</p>
+                </div>
+                <div class="hypo-card">
+                    <div class="hypo-num">03</div>
+                    <h3>O "Efeito Fricção da Distância"</h3>
+                    <p>A barreira do deslocamento na periferia reduz o acesso de moradores da Brasilândia a melhores empregos, cultura e serviços especializados, retroalimentando o ciclo da pobreza.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: ROTEIRO ORAL -->
+        <section class="slide" id="slide-7">
+            <div class="slide-header">
+                <span class="axis-badge">Argumentação Oral (5 Minutos)</span>
+                <h2>ROTEIRO DE FALA PARA A DUPLA</h2>
+            </div>
+            <div class="speech-script">
+                <div class="script-step">
+                    <div class="step-time">00:00 - 01:00</div>
+                    <div class="step-content">
+                        <h4>Apresentação e Contextualização</h4>
+                        <p>"Boa tarde a todos e ao professor. Hoje apresentamos a análise comparativa entre Ibirapuera e Brasilândia usando o Mapa da Desigualdade 2025. O Ibirapuera representa o centro bem provido, e a Brasilândia representa a periferia vulnerável."</p>
+                    </div>
+                </div>
+                <div class="script-step">
+                    <div class="step-time">01:00 - 03:00</div>
+                    <div class="step-content">
+                        <h4>Apresentação dos 4 Indicadores</h4>
+                        <p>"Ao analisar os indicadores, vemos que na Saúde e Educação a discrepância é marcante: no Ibirapuera a mortalidade infantil é zero e o IDEB é 6,8, enquanto na Brasilândia é 15,2 e 4,4. Na Segurança e Habitação, vemos que quase 30% dos domicílios da Brasilândia estão em favelas, contra 0% no Ibirapuera."</p>
+                    </div>
+                </div>
+                <div class="script-step">
+                    <div class="step-time">03:00 - 04:30</div>
+                    <div class="step-content">
+                        <h4>Hipótese Geográfica</h4>
+                        <p>"A nossa hipótese geográfica explica que isso ocorre devido à segregação socioespacial histórica. O preço da terra expulsa os trabalhadores mais pobres para o extremo norte, e a prefeitura prioriza investimentos onde a elite vive."</p>
+                    </div>
+                </div>
+                <div class="script-step">
+                    <div class="step-time">04:30 - 05:00</div>
+                    <div class="step-content">
+                        <h4>Conclusão</h4>
+                        <p>"Concluímos que a desigualdade em São Paulo não é obra do acaso, mas sim do modelo de planejamento urbano. Obrigado!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- NAVEGAÇÃO DOS SLIDES -->
+    <footer class="bottom-nav">
+        <button id="prev-btn" class="nav-btn">← Anterior</button>
+        <span id="slide-indicator">Slide 1 de 7</span>
+        <button id="next-btn" class="nav-btn primary">Próximo →</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
